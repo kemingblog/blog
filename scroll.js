@@ -9,7 +9,7 @@ function scroll() {
   document.getElementById("scroll").style.width = scrolled + "%";
   document.title = scrolled + "%";
   document.getElementById("progress").innerHTML = Math.round(scrolled) + "%";
-  if(Math.round(scrolled) >= 9) {
+  if(scrolled >= 6) {
     document.getElementById("scroll-div").style.position = "fixed";
     document.getElementById("scroll-div").style.marginTop = "-80px";
   } else {
